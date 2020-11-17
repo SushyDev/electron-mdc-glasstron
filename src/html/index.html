@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8' />
+	<link rel="stylesheet" href="../css/styles.css" />
+	<link rel="stylesheet" href="../css/index.css">
+
+	<script src="../js/content.js" defer></script>
+
+	<script src="../js/dist/material.dev.js" defer></script>
+
+	<script src="../js/require.js" defer></script>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<script src="../../node_modules/material-components-web/dist/material-components-web.min.js" defer></script>
+</head>
+
+<body>
+	<header class="mdc-top-app-bar app-bar" id="app-bar" style="-webkit-app-region: drag">
+		<div class="mdc-top-app-bar__row">
+			<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+				<button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+					data-mdc-auto-init="MDCRipple" style="-webkit-app-region: no-drag">menu</button>
+				<span class="mdc-top-app-bar__title" id="top-app-bar-title">Home</span>
+			</section>
+		</div>
+	</header>
+
+
+	<aside class="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust" id="mdc-drawer">
+		<div class="mdc-drawer__content">
+			<div class="mdc-list" data-mdc-auto-init="MDCList">
+				<a class="mdc-list-item mdc-list-item--activated" aria-current="page">
+					<span class="mdc-list-item__ripple"></span>
+					<i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+					<span class="mdc-list-item__text">Home</span>
+				</a>
+				<a class="mdc-list-item">
+					<span class="mdc-list-item__ripple"></span>
+					<i class="material-icons mdc-list-item__graphic" aria-hidden="true">desktop_windows</i>
+					<span class="mdc-list-item__text">Page 1</span>
+				</a>
+				<a class="mdc-list-item">
+					<span class="mdc-list-item__ripple"></span>
+					<i class="material-icons mdc-list-item__graphic" aria-hidden="true">battery_charging_full</i>
+					<span class="mdc-list-item__text">Page 2</span>
+				</a>
+				<a class="mdc-list-item">
+					<span class="mdc-list-item__ripple"></span>
+					<i class="material-icons mdc-list-item__graphic" aria-hidden="true">keyboard</i>
+					<span class="mdc-list-item__text">Page 3</span>
+				</a>
+				<a class="mdc-list-item">
+					<span class="mdc-list-item__ripple"></span>
+					<i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
+					<span class="mdc-list-item__text">Settings</span>
+				</a>
+			</div>
+		</div>
+	</aside>
+
+	<div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+		<main class="main-content" id="main-content">
+		</main>
+	</div>
+</body>
+
+</html>

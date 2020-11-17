@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/power.js"></script>
+</head>
+
+<div class="main-body">
+    <div class="content" id="content">
+        <h4 class="mdc-typography--headline4">Power Profiles</h4>
+
+        <p>Select a power mode:</p>
+
+        <div class="buttons" id="buttons">
+            <button class="mdc-button mdc-button--raised" onclick="powerBoost()">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">dynamic_form</i>
+                <span class="mdc-button__label">Boost</span>
+            </button>
+
+            <button class="mdc-button mdc-button--raised" onclick="powerNormal()">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">settings_backup_restore</i>
+                <span class="mdc-button__label">Normal</span>
+            </button>
+
+            <button class="mdc-button mdc-button--raised" onclick="powerSilent()">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">eco</i>
+                <span class="mdc-button__label">Silent</span>
+            </button>
+        </div>
+
+        <p>Current profile: needs to be implemented waiting for fluke to update asus-nb-ctrl</p>
+    </div>
+</div>
+
+</html>

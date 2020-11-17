@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/keyboard_leds.css">
+</head>
+<div class="main-body">
+    <h4 class="mdc-typography--headline4">Keyboard LEDs</h4>
+
+    <p>Configure the keyboard brightness</p>
+
+    <div class="mdc-slider mdc-slider--discrete mdc-slider--display-markers" tabindex="0" role="slider"
+        aria-valuemin="0" aria-valuemax="3" aria-valuenow="0" data-step="1" 
+        data-mdc-auto-init="MDCSlider">
+        <div class="mdc-slider__track-container">
+            <div class="mdc-slider__track"></div>
+            <div class="mdc-slider__track-marker-container"></div>
+        </div>
+        <div class="mdc-slider__thumb-container">
+            <div class="mdc-slider__pin">
+                <span class="mdc-slider__pin-value-marker"></span>
+            </div>
+            <svg class="mdc-slider__thumb" width="21" height="21">
+                <circle cx="10.5" cy="10.5" r="7.875"></circle>
+            </svg>
+            <div class="mdc-slider__focus-ring"></div>
+        </div>
+    </div>
+
+</div>
+
+<script src="../js/keyboard_leds.js"></script>
+
+<script src="../js/dist/keyboard_leds_slider.dev.js"></script>
+
+<script>
+    const {MDCSlider} = require('@material/slider/dist/mdc.slider');
+    const slider = new MDCSlider(document.querySelector('.mdc-slider'));
+    slider.listen('MDCSlider:change', () => setBrightness());
+</script>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/gfx_modes.css">
+    <script src="../js/gfx_modes.js" defer></script>
+</head>
+
+<div class="main-body">
+
+    <h4 class="mdc-typography--headline4">GFX Modes</h4>
+
+    <p>Select a graphics mode:</p>
+
+    <div class="buttons" id="buttons">
+
+    <button class="mdc-button mdc-button--raised" onclick="videoMode('nvidia')">
+        <div class="mdc-button__ripple"></div>
+        <i class="material-icons mdc-button__icon" aria-hidden="true">memory</i>
+        <span class="mdc-button__label">Select Integrated</span>
+    </button>
+
+    <button class="mdc-button mdc-button--raised" onclick="videoMode('integrated')">
+        <div class="mdc-button__ripple"></div>
+        <i class="material-icons mdc-button__icon" aria-hidden="true">high_quality</i>
+        <span class="mdc-button__label">Select Nvidia</span>
+    </button>
+
+    <button class="mdc-button mdc-button--raised" onclick="videoMode('hybrid')">
+        <div class="mdc-button__ripple"></div>
+        <i class="material-icons mdc-button__icon" aria-hidden="true">eco</i>
+        <span class="mdc-button__label">Select Hybrid</span>
+    </button>
+
+    <button class="mdc-button mdc-button--raised" onclick="videoMode('compute')">
+        <div class="mdc-button__ripple"></div>
+        <i class="material-icons mdc-button__icon" aria-hidden="true">api</i>
+        <span class="mdc-button__label">Select Compute</span>
+    </button>
+
+    <button class="mdc-button mdc-button--raised" onclick="reboot()">
+        <div class="mdc-button__ripple"></div>
+        <i class="material-icons mdc-button__icon" aria-hidden="true">refresh</i>
+        <span class="mdc-button__label">Reboot</span>
+    </button>
+    </div>
+
+    <div id="profile">Current profile: needs to be reimplemented waiting for fluke to update asus-nb-ctrl</div>
+
+</div>
+
+</html>

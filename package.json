@@ -19,8 +19,15 @@
   },
   "homepage": "https://github.com/ruslang02/electron-mdc-quick-start#readme",
   "dependencies": {
-    "material-components-web": "^0.35.2",
+    "electron-reload": "^1.5.0",
+    "glasstron": "git+https://github.com/AryToNeX/Glasstron.git",
+    "jquery": "^3.5.1",
+    "material-components-web": "^7.0.0",
     "material-design-icons-webfont": "^1.0.0",
-    "sass": "^1.6.2"
+    "sass": "^1.6.2",
+    "sudo-prompt": "^9.2.1"
+  },
+  "devDependencies": {
+    "electron": "^4.0.5"
   }
 }
